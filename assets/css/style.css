@@ -1,0 +1,105 @@
+/* Main CSS Custom Styles & Rules */
+
+body {
+  font-family: "Shadows Into Light", cursive;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 10px 100px;
+}
+
+header,
+footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.556);
+  color: rgb(3, 0, 70);
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px 1px rgb(168 164 164 / 36%);
+}
+footer {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.267);
+}
+
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.left-side,
+.right-side {
+  background-color: rgba(255, 255, 255, 0.156);
+  color: rgb(3, 0, 70);
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px 1px rgb(168 164 164 / 36%);
+}
+
+.fiveday {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+#local-weather,
+#search-selected {
+  border: 1px solid white;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+#recent-search,
+#search-selected {
+  margin-top: 2em;
+}
+
+#search-selected {
+  display: none;
+}
+
+input#search-button,
+button#clear-history {
+  padding: 0.5em;
+  background-color: rgba(45, 28, 228, 0.5);
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+input#search-field {
+  padding: 0.5em;
+  border: none;
+  background-color: rgba(65, 65, 109, 0.8);
+  color: #fff;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+button.city-name {
+  border: 1px solid white;
+  padding: 0.5em;
+  font-size: 1.2em;
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  color: #fff;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* ==== Mobile Specific Rules ==== */
+
+@media (min-width: 992px) {
+  .fiveday {
+    margin-right: 1em;
+    padding: 0.5em;
+  }
+}
